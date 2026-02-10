@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemetaan Museum Kota Bandung</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap" rel="stylesheet">
+</head>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GoToMuse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#chartModal">Lihat Persebaran</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Panel Informasi di Kiri -->
+        <aside id="info-panel">
+            <header>
+                <h1>Tiga Wajah Museum Bandung</h1>
+            </header>
+            
+            <div class="general-info">
+                 <p>Setiap museum adalah kapsul waktu, namun tidak semua kapsul waktu diciptakan pada era yang sama. Jika kita perhatikan lebih saksama, museum-museum di Bandung dapat dikelompokkan berdasarkan periode dan tujuan pendiriannya. Pengelompokan ini bukanlah sekadar trivia sejarah, melainkan cerminan dari tiga fase evolusi Kota Bandung itu sendiri.</p>
+            </div>
+            
+            <div class="info-box">
+                <h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
+                    Tahukah Kamu?
+                </h6>
+                <p>Kata 'museum' berasal dari bahasa Yunani Kuno, "mouseion", yang berarti "kuil para Musai". Musai adalah sembilan dewi pelindung seni dan ilmu pengetahuan dalam mitologi Yunani.</p>
+            </div>
+
+            <div class="accordion accordion-flush" id="museumAccordion">
+              <!-- Fase 1: Wajah Kolonial -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKolonial">
+                    Fase 1: Wajah Kolonial – Museum sebagai Pusat Riset dan Pengetahuan
+                  </button>
+                </h2>
+                <div id="collapseKolonial" class="accordion-collapse collapse show" data-bs-parent="#museumAccordion">
+                  <div class="accordion-body">
+                    <p>Gelombang pertama pendirian museum di Bandung diprakarsai oleh pemerintah kolonial Belanda pada awal abad ke-20. Tujuannya sangat pragmatis: untuk penelitian, dokumentasi, dan pengelolaan sumber daya alam Hindia Belanda.</p>
+                    <div class="image-gallery">
+                        <div class="image-item">
+                            <img src="https://img.inews.co.id/media/1200/files/inews_new/2023/02/13/museum_geologi_bandung1.jpg" alt="Museum Geologi">
+                            <h6><b>Museum Geologi (1928)</b><br>Menyimpan koleksi geologi dan fosil terlengkap di Indonesia.</h6>
+                        </div>
+                        <div class="image-item">
+                             <img src="https://statik.tempo.co/data/2017/12/06/id_667976/667976_720.jpg" alt="Gedung Sate">
+                             <h6><b>Gedung Sate (1920)</b><br>Ikon arsitektur Hindia Belanda yang berfungsi sebagai pusat pemerintahan.</h6>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fase 2: Wajah Nasionalis -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNasionalis">
+                    Fase 2: Wajah Nasionalis – Museum sebagai Monumen Perjuangan
+                  </button>
+                </h2>
+                <div id="collapseNasionalis" class="accordion-collapse collapse" data-bs-parent="#museumAccordion">
+                  <div class="accordion-body">
+                    <p>Setelah kemerdekaan Indonesia, fungsi museum mengalami pergeseran fundamental. Generasi baru museum lahir dari kebutuhan untuk mengabadikan, merayakan, dan mewariskan semangat perjuangan kemerdekaan kepada generasi mendatang.</p>
+                     <div class="image-gallery">
+                        <div class="image-item">
+                            <img src="https://mkaa.kemlu.go.id/asset/media-baru/Virtual-Tur/thumbnail-portait-220130.png" alt="Museum Konferensi Asia-Afrika">
+                            <h6><b>Museum KAA (1980)</b><br>Monumen diplomasi Indonesia yang memperingati KAA 1955.</h6>
+                        </div>
+                        <div class="image-item">
+                             <img src="https://c1.staticflickr.com/3/2920/33555237271_e704e10cc9_b.jpg" alt="Museum Mandala Wangsit">
+                             <h6><b>Mandala Wangsit</b><br>Mengabadikan perjuangan Divisi Siliwangi dan rakyat Jawa Barat.</h6>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fase 3: Wajah Kontemporer -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKontemporer">
+                    Fase 3: Wajah Kontemporer – Museum sebagai Ruang Ekspresi Seni
+                  </button>
+                </h2>
+                <div id="collapseKontemporer" class="accordion-collapse collapse" data-bs-parent="#museumAccordion">
+                  <div class="accordion-body">
+                    <p>Memasuki era modern, Bandung menegaskan dirinya sebagai kota kreatif. Hal ini tercermin dari lahirnya museum-museum yang diinisiasi oleh individu atau komunitas, dengan fokus utama pada seni dan ekspresi budaya.</p>
+                    <div class="image-gallery">
+                        <div class="image-item">
+                           <img src="https://backpackerjakarta.com/wp-content/uploads/2017/05/koleksi-museum-arli-Asmitawinata.jpg" alt="Museum Barli">
+                           <h6><b>Museum Barli</b><br>Ruang ekspresi yang didedikasikan untuk karya maestro Barli Sasmitawinata.</h6>
+                        </div>
+                        <div class="image-item">
+                             <img src="https://www.rukita.co/stories/wp-content/uploads/2022/12/165777458574-habiskan-liburan-sekolah-yuk-belajar-sejarah-di-museum-kota-bandung.jpeg" alt="Museum Kota Bandung">
+                             <h6><b>Museum Kota Bandung</b><br>Inisiatif modern untuk menceritakan sejarah Bandung secara komprehensif kepada generasi masa kini.</h6>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="museum-list-section">
+                 <h5>Daftar Museum di Bandung</h5>
+                 <ul class="detailed-museum-list">
+                    <li><strong>MUSEUM BARLI</strong><br><small>JL. PROF. DR. SUTAMI NO. 91</small></li>
+                    <li><strong>MUSEUM KEBUDAYAAN TIONGHOA</strong><br><small>JL. NANA ROHANA NO. 37</small></li>
+                    <li><strong>MUSEUM 3D</strong><br><small>JL. DR. SETIABUDI</small></li>
+                    <li><strong>MUSEUM GEDUNG SERBA GUNA</strong><br><small>JL. W.R. SUPRATMAN NO. 60</small></li>
+                    <li><strong>MUSEUM TANAH DAN PERTANIAN</strong><br><small>JL. IR. H. JUANDA NO. 98</small></li>
+                    <li><strong>MUSEUM PERUMUSAN NASKAH PROKLAMASI</strong><br><small>JL. DIPONEGORO NO. 57</small></li>
+                    <li><strong>MUSEUM PERJOANGAN RAKYAT JAWA BARAT</strong><br><small>JL. DIPATIUKUR NO. 48</small></li>
+                    <li><strong>GEDUNG INDONESIA MENGGUGAT</strong><br><small>JL. PERINTIS KEMERDEKAAN NO. 5</small></li>
+                    <li><strong>MUSEUM WANGSIT MANDALA SILIWANGI</strong><br><small>JL. LEMBONG NO. 38</small></li>
+                    <li><strong>MUSEUM PENINGGALAN DR. AK. GANI</strong><br><small>JL. DIPONEGORO</small></li>
+                    <li><strong>MUSEUM KONPERENSI ASIA AFRIKA</strong><br><small>JL. ASIA AFRIKA NO. 65</small></li>
+                    <li><strong>MUSEUM SRI BADUGA</strong><br><small>JL. B.K.R NO. 185</small></li>
+                    <li><strong>MUSEUM MAINAN</strong><br><small>JL. SUNDA NO. 39</small></li>
+                    <li><strong>MUSEUM VIRAJATI SESKOAD</strong><br><small>JL. GATOT SUBROTO NO. 96</small></li>
+                    <li><strong>MUSEUM NIKE ARDILLA</strong><br><small>KOMP. ARYA GRAHA. JL. ARIA UTAMA NO. 5</small></li>
+                    <li><strong>HALL OF FAME JAWA BARAT</strong><br><small>JL. DR. SETIABUDI NO. 287</small></li>
+                 </ul>
+            </div>
+
+            <footer class="panel-footer">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/josephinemncaa?igsh=MXg5enJuN2pmbnBlYw%3D%3D&utm_source=qr" target="_blank" title="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+                    </a>
+                    <a href="https://wa.me/6281223401840" target="_blank" title="WhatsApp">
+                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22C13.66,22 15.25,21.58 16.63,20.8L21.41,22L20.65,17.3C21.5,15.91 22,14 22,12A10,10 0 0,0 12,2M17.5,15.31C17.18,15.89 15.96,16.63 15.4,16.75C14.84,16.87 14.1,16.81 13.56,16.63C12.06,16.15 10.38,15.11 9,13.75C7.5,12.25 6.5,10.44 6.13,8.81C5.92,8.15 6,7.44 6.13,6.88C6.25,6.32 6.91,5.13 7.5,4.81C8.06,4.5 8.5,4.5 8.81,4.5C9.06,4.5 9.31,4.5 9.5,4.75C9.81,5.13 10.13,5.89 10.25,6.13C10.38,6.38 10.38,6.69 10.25,6.94C10.13,7.19 10.06,7.31 9.88,7.56C9.69,7.81 9.5,8 9.75,8.31C10,8.63 10.63,9.5 11.5,10.38C12.38,11.25 13.25,11.88 13.56,12.13C13.88,12.38 14.06,12.25 14.31,12.06C14.56,11.88 14.69,11.81 14.94,11.69C15.19,11.56 15.5,15.56 15.75,11.69C16,11.81 16.75,12.5 17.06,12.81C17.31,13.06 17.38,13.31 17.38,13.56C17.31,13.88 17.31,14.25 17.5,15.31Z" /></svg>
+                    </a>
+                    <a href="http://linkedin.com/in/josephine-monica-7a66a424b" target="_blank" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4s1.39.63 1.39 1.4v4.93h2.8zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg>
+                    </a>
+                </div>
+            </footer>
+        </aside>
+
+        <!-- Kontainer Peta di Kanan -->
+        <main id="map-container">
+            <!-- PENTING: Pastikan file "index.html" dari QGIS berada di folder yang sama -->
+            <iframe src="index.html" title="Peta Interaktif Museum Bandung" allowfullscreen=""></iframe>
+        </main>
+    </div>
+    
+    <!-- Modal untuk menampilkan Chart Distribusi -->
+    <div class="modal fade" id="chartModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Persebaran Museum di Kota Bandung</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <!-- PENTING: Pastikan file "bar.html" berada di folder yang sama -->
+            <iframe src="bar.html" title="Diagram Persebaran Museum"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5.1 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
