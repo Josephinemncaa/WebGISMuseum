@@ -225,4 +225,14 @@
                 width: 100%;
                 height: 30%;
             }
+
         }
+        .accordion-button { 
+            transition: all 0.3s ease-in-out;
+        }
+        .accordion-button:not(.collapsed) 
+        {
+            background-color: rgba(177, 116, 87, 0.1) !important; /* Warna accent transparan */}
+            #info-panel {
+                scroll-behavior: smooth; /* Scroll yang halus saat klik link */
+            }
